@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import {Github, Twitter} from '@styled-icons/entypo-social'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -20,6 +21,7 @@ const Bio = () => {
           }
           social {
             twitter
+            github
           }
         }
       }
@@ -32,6 +34,7 @@ const Bio = () => {
 
   return (
     <div className="bio">
+    
       <StaticImage
         className="bio-avatar"
         layout="fixed"
@@ -42,12 +45,16 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
+      {console.log(social)}
       {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          <a target="_blank" href={`https://twitter.com/${social?.twitter || ``}`} rel="noreferrer">
+            <Twitter size={25} />
+          </a>
+          <a target="_blank" href={`https://github.com/${social?.github || ``}`} rel="noreferrer">
+            <Github size={25} />
           </a>
         </p>
       )}
