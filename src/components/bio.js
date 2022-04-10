@@ -45,7 +45,6 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      {console.log(social)}
       {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
