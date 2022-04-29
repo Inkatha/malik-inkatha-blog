@@ -1,7 +1,7 @@
 ---
-title: Teaching a Video Game Design Class
+title: Teaching a Video Game Design Class - Part I
 date: "2022-04-11T22:12:03.284Z"
-description: "Hello World"
+description: "Part I: Breakdown of teaching a video game design class at IMAN (Inner-City Muslim Action Network)"
 ---
 
 When I was called by a friend and asked if I’d like to teach a video game design class for Arts and Culture program for [IMAN (Inner-City Muslim Action Network)](https://www.imancentral.org/arts-culture/), I was elated and nervous. My background is primarily in web development, but would I be able to learn enough in a week to teach a 5 week class? **CHALLENGE ACCEPTED** 👏🏾.
